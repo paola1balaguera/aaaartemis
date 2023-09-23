@@ -1,0 +1,123 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Casillas en grid*/
+
+.grid-distribution {
+    display: grid;
+    grid-template-areas:
+        "side header header"
+        "side main main";
+    grid-template-rows: auto;
+}
+
+/*dispocisión flex de la página*/
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-container-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Título de la página */
+
+.aside-cont {
+    text-align: center;
+    background-color: blue;
+    grid-area: header;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/*Navigation bar*/
+
+.nav-el {
+    padding: 2%;
+    margin: 10px;
+    width: 180px;
+    background-color: #532e6d;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+/*Contenido de los botones*/
+
+.nav-cont {
+    text-align: center;
+    background-color: chartreuse;
+    grid-area: side;
+}
+
+/*Cuerpo de la página*/
+
+.info-cont {
+    text-align: center;
+    background-color: tomato;
+    grid-area: main;
+}
+
+.container {
+    width: 300px;
+    border: 2px solid #96b6c5;
+    margin: 20px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #eee0c9;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.img-cont {
+    width: 300px;
+    height: 300px;
+    margin: 0 0 25px 0;
+    border-radius: 20px;
+}
+
+.img-cont img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.tittle-product {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tittle-product h2 {
+    color: #424b4e;
+}
+
+@media (max-width: 768px) {
+    .grid-distribution {
+        grid-template-areas:
+            "header"
+            "side"
+            "main";
+    }
+
+    .flex-container {
+        align-content: center;
+    }
+}

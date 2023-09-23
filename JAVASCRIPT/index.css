@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh; /* para que ocupe la pantalla por lo menos */
+    background-color: blue;
+    display: grid;
+/* /*     align-items: center;  /* o me puedo ahorrar ese trabajo con place items */
+/*     justify-items: center; */ 
+    place-items: center;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: blue;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: .5rem;
+
+
+}
+
+
+.scree
